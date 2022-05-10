@@ -4,7 +4,7 @@ with open('./txt_files/rosalind_subs.txt') as infile:
     seq = infile.readline().strip()
     motif = infile.readline().strip()
 
-loci=set()
+loci = set()
 # print(seq[1:].find(motif))
 
 for i, v in enumerate(seq):
