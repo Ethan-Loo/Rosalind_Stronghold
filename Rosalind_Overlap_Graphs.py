@@ -1,6 +1,6 @@
 from parse_fasta import parse
 
-file='./rosalind_grph.txt'
+file='./txt_files/rosalind_grph.txt'
 seqs, heads = parse(fasta_file=file, return_heads=True)
 
 def find_adj(seqs=[], headers=[], seq_len=1):

@@ -17,7 +17,7 @@ CG_pcts = []
 #     seqs = seqs[1:]
 # print(seqs)
 
-file = './rosalind_gc.txt'
+file = './txt_files/rosalind_gc.txt'
 seqs = parse(fasta_file=file)
 
 for seq in seqs:

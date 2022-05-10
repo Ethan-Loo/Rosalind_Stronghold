@@ -1,5 +1,5 @@
 from parse_fasta import parse
-seq = parse('./rosalind_revp.txt')[0]
+seq = parse('./txt_files/rosalind_revp.txt')[0]
 
 Comp_Dict = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
 

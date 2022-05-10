@@ -17,7 +17,7 @@ def main():
     amino_acids = 'FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG'
     codon_table = dict(zip(codons, amino_acids))
     seq=''
-    with open('./rosalind_prot.txt') as infile:
+    with open('./txt_files/rosalind_prot.txt') as infile:
         for line in infile:
             seq += line
         print(seq)

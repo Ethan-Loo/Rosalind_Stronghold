@@ -21,7 +21,7 @@ mass_table = {'A':71.03711,
               'W':186.07931,
               'Y':163.06333, }
 
-file = './rosalind_prtm.txt'
+file = './txt_files/rosalind_prtm.txt'
 with open(file) as infile:
     protein= infile.readline().strip()
 total_mass=0

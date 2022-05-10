@@ -1,6 +1,6 @@
 seq_list=[]
 temp = ''
-with open('./rosalind_cons.txt') as infile:
+with open('./txt_files/rosalind_cons.txt') as infile:
     for line in infile:
         if line.startswith('>'):
             seq_list.append(temp)

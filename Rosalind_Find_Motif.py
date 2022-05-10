@@ -1,6 +1,6 @@
 import re
 
-with open('./rosalind_subs.txt') as infile:
+with open('./txt_files/rosalind_subs.txt') as infile:
     seq = infile.readline().strip()
     motif = infile.readline().strip()
 

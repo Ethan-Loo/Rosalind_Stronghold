@@ -1,4 +1,4 @@
-with open('./rosalind_hamm.txt') as infile:
+with open('./txt_files/rosalind_hamm.txt') as infile:
     original = infile.readline()
     mutant = infile.readline()
 hamm = 0
