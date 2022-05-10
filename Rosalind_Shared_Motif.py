@@ -3,7 +3,7 @@ import itertools
 import multiprocessing as mp
 from parse_fasta import parse
 
-file='./DELETE_ME2.txt'
+file= '../DELETE_ME2.txt'
 
 seqs = parse(fasta_file=file)
 
