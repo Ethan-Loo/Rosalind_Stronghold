@@ -1,4 +1,4 @@
-seq_list=[]
+seq_list = []
 temp = ''
 with open('./txt_files/rosalind_cons.txt') as infile:
     for line in infile:
@@ -26,18 +26,19 @@ def _list_initiate(seq_list):
 
 def count_nuc(nuc, seq_list=seq_list):
     pos_count = _list_initiate(seq_list=seq_list)
-    for i in range(0,len(seq_list)):
+    for i in range(0, len(seq_list)):
         # print(i)
         # print(seq_list[i])
         # print(pos_count)
         for index, v in enumerate(seq_list[i]):
             count = pos_count[index]
             if v == nuc:
-                count+=1
+                count += 1
                 pos_count[index] = count
             # print(v)
     print(nuc+':', *pos_count)
     return pos_count
+
 
 def main():
     A = count_nuc(nuc='A', seq_list=seq_list)
@@ -56,19 +57,18 @@ def main():
         profile_lst.append(max(count_lst))
 
     # print(*profile_lst, sep='')
-    consensus= ''
+    consensus = ''
     for num, v in enumerate(profile_lst):
-        used=False
+        used = False
         for key, value in nuc_dict.items():
             if used:
                 pass
             elif v == value[num]:
                 # print(key,value[num])
-                consensus+=key
-                used=True
-
-
+                consensus += key
+                used = True
     print(consensus)
+
 
 if __name__ == '__main__':
     main()
