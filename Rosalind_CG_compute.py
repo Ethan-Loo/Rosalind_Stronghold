@@ -4,18 +4,7 @@ headers = []
 seqs = []
 temp = ''
 CG_pcts = []
-# with open('./rosalind_gc.txt') as infile:
-#     for line in infile:
-#         if line.startswith('>'):
-#             seqs.append(temp)
-#             headers.append(line.strip('>').strip('\r\n'))
-#             temp = ''
-#         else:
-#             temp += line.strip('\r\n')
-#     if len(temp) > 0:
-#         seqs.append(temp)
-#     seqs = seqs[1:]
-# print(seqs)
+
 
 file = './txt_files/rosalind_gc.txt'
 seqs, headers = parse(fasta_file=file, return_heads=True)
