@@ -5,5 +5,5 @@ hamm = 0
 
 for ind, nuc in enumerate(original):
     if nuc != mutant[ind]:
-        hamm +=1
+        hamm += 1
 print(hamm)

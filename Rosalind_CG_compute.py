@@ -5,7 +5,6 @@ seqs = []
 temp = ''
 CG_pcts = []
 
-
 file = './txt_files/rosalind_gc.txt'
 seqs, headers = parse(fasta_file=file, return_heads=True)
 
