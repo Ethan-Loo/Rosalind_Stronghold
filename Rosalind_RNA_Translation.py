@@ -1,4 +1,5 @@
 def translate(seq, codon_table):
+    """This function will translate a DNA sequence into a protein sequence."""
     seq = seq.lower().replace('\n', '').replace(' ', '')
     peptide = ''
 
@@ -15,7 +16,7 @@ def main():
     bases = "ucag"
     codons = [a + b + c for a in bases for b in bases for c in bases]
     amino_acids = 'FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG'
-    codon_table = dict(zip(codons, amino_acids))
+    codon_table = dict(zip(codons, amino_acids)) # create a dictionary of codons and amino acids from the two lists above
     seq=''
     with open('./txt_files/rosalind_prot.txt') as infile:
         for line in infile:

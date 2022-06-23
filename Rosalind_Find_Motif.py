@@ -4,15 +4,11 @@ with open('./txt_files/rosalind_subs.txt') as infile:
     seq = infile.readline().strip()
     motif = infile.readline().strip()
 
-loci = set()
-# print(seq[1:].find(motif))
+loci = set() # Set to store all locations of motif in seq
+
 
 for i, v in enumerate(seq):
-    # print(seq[i:])
-    # print(seq[i:].find(motif)+i)
-    # loci.add(seq[i:].find(motif)+i)
     if re.search(motif, seq[i:]) != None:
-        # print(re.search(motif, seq[i:]).start()+i)
-        loci.add(re.search(motif, seq[i:]).start()+i+1)
+        loci.add(re.search(motif, seq[i:]).start()+i+1) # +1 to account for 0-indexing if motif is found
 
 print(sorted(loci))

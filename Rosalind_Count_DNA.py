@@ -1,4 +1,5 @@
 def count(test_string):
+    """Counts the number of times each nucleotide occurs in a string of DNA and prints the counts."""
     test_string.upper()
     print(f'{test_string.count("A")} {test_string.count("C")} '
           f'{test_string.count("G")} {test_string.count("T")}')

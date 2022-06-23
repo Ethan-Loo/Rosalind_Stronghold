@@ -22,7 +22,9 @@ DNA_CODON_TABLE = {
     'TGG': 'W',     'CGG': 'R',     'AGG': 'R',     'GGG': 'G'
 }
 
+
 def _translate_codon(codon):
+    """Translate codon to protein"""
     protein = None
     if len(codon) == 3 and codon in DNA_CODON_TABLE:
         protein = DNA_CODON_TABLE[codon]
@@ -30,11 +32,13 @@ def _translate_codon(codon):
 
 
 def reverse_complement(dna):
+    """Return the reverse complement of a DNA string."""
     lookup = {'A':'T', 'T':'A', 'G':'C', 'C':'G'}
     return ''.join([lookup[c] for c in reversed(dna)])
 
 
 def possible_protein_strings(s):
+    """Return all possible proteins in a DNA string."""
     results = []
     indices = []
 

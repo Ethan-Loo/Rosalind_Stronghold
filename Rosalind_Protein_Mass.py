@@ -1,5 +1,3 @@
-from parse_fasta import parse
-
 mass_table = {'A':71.03711,
               'C':103.00919,
               'D':115.02694,
@@ -27,7 +25,7 @@ with open(file) as infile:
 total_mass=0
 
 for v in protein:
-    total_mass+=mass_table[v]
+    total_mass+=mass_table[v] #adds the mass of each amino acid from the mass table to the total mass
 
 print(f'Total mass of {protein} \n'
       f'is {total_mass:.3f}')

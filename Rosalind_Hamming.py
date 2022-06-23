@@ -5,5 +5,5 @@ hamm = 0
 
 for ind, nuc in enumerate(original):
     if nuc != mutant[ind]:
-        hamm += 1
+        hamm += 1 # if nucleotides are different, add 1 to the hamming distance
 print(hamm)

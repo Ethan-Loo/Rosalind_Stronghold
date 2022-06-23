@@ -7,7 +7,7 @@ recess=17
 total = hetero+domin+recess
 
 def doublefactorial(n):
-
+    """This function will return the double factorial of a number using a recursive function"""
     if (n == 0 or n == 1):
         return 1;
     return n * doublefactorial(n - 2);

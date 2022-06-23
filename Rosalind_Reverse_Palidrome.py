@@ -1,9 +1,14 @@
+"""This program will find reverse palindromes in a DNA string by taking the reverse complement and
+comparing n-mers between the minimum and maximum length parameters.
+It will return the positions of the palindromes in the sequence along with the length of the palindrome."""
+
 from parse_fasta import parse
 seq = parse('./txt_files/rosalind_revp.txt')[0]
 
 Comp_Dict = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
 
 def rev_comp(seq=seq, cd=Comp_Dict):
+    """This function will reverse complement a DNA string."""
     r = ''
     for l in seq:
         r = cd[l.upper()]+r
